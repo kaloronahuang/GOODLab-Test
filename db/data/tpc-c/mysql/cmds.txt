@@ -1,0 +1,14 @@
+mysqladmin -uroot -p create tpcc1000
+mysql -uroot -p tpcc1000 < create_table.sql
+mysql -uroot -p tpcc1000 < add_fkey_idx.sql
+./tpcc_load -h127.0.0.1 -d tpcc1000 -u root -p "" -w 1000
+
+./tpcc_start -h 127.0.0.1 -P 3306 -d tpcc1000 -u root -p Kaloms_oiau2018 -w100 -c32 -r10 -l1800 -i 10 >> tpcc_report.txt
+
+sync; dd if=/dev/zero of=/mnt/ramdisk/test bs=1M count=1024; sync
+
+./tpcc.lua --mysql-socket=/var/run/mysqld/mysqld.sock --mysql-user=root --mysql-db=sbr --time=3000 --threads=64 --report-interval=1 --tables=10 --scale=100 --use_fk=0 --mysql_storage_engine=rocksdb --mysql_table_options='COLLATE latin1_bin' --trx_level=RC --db-driver=mysql prepare
+
+./tpcc.lua --mysql-socket=/var/run/mysqld/mysqld.sock --mysql-user=root --mysql-db=sbt --time=300 --threads=64 --report-interval=1 --tables=10 --scale=100 --db-driver=mysql run
+
+./tpcc.lua --mysql-socket=/var/run/mysqld/mysqld.sock --mysql-user=root --mysql-db=sbt --time=300 --threads=64 --report-interval=1 --tables=10 --scale=100 --db-driver=mysql cleanup
