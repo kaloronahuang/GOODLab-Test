@@ -46,7 +46,7 @@ Threads: 2  Questions: 6  Slow queries: 0  Opens: 119  Flush tables: 3  Open tab
 ```
 ## RocksDB Version
 
-`rocksdb-7.4.5`
+`rocksdb-7.4.4`
 
 ## YCSB Version
 
