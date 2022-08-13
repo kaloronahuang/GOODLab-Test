@@ -1,0 +1,49 @@
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+[OVERALL], RunTime(ms), 923
+[OVERALL], Throughput(ops/sec), 1083.4236186348862
+[TOTAL_GCS_PS_Scavenge], Count, 0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 0
+[TOTAL_GC_TIME], Time(ms), 0
+[TOTAL_GC_TIME_%], Time(%), 0.0
+[READ], Operations, 1000
+[READ], AverageLatency(us), 426.435
+[READ], MinLatency(us), 117
+[READ], MaxLatency(us), 20927
+[READ], 95thPercentileLatency(us), 521
+[READ], 99thPercentileLatency(us), 1289
+[READ], Return=OK, 1000
+[READ-MODIFY-WRITE], Operations, 517
+[READ-MODIFY-WRITE], AverageLatency(us), 5645.0754352030945
+[READ-MODIFY-WRITE], MinLatency(us), 2588
+[READ-MODIFY-WRITE], MaxLatency(us), 35647
+[READ-MODIFY-WRITE], 95thPercentileLatency(us), 7695
+[READ-MODIFY-WRITE], 99thPercentileLatency(us), 10943
+[CLEANUP], Operations, 6
+[CLEANUP], AverageLatency(us), 443.6666666666667
+[CLEANUP], MinLatency(us), 227
+[CLEANUP], MaxLatency(us), 1233
+[CLEANUP], 95thPercentileLatency(us), 1233
+[CLEANUP], 99thPercentileLatency(us), 1233
+[UPDATE], Operations, 517
+[UPDATE], AverageLatency(us), 5037.568665377176
+[UPDATE], MinLatency(us), 2248
+[UPDATE], MaxLatency(us), 9871
+[UPDATE], 95thPercentileLatency(us), 7075
+[UPDATE], 99thPercentileLatency(us), 8095
+[UPDATE], Return=OK, 517

@@ -1,0 +1,35 @@
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Adding shard node URL: jdbc:mysql://127.0.0.1:3306/test_db
+Using shards: 1, batchSize:1000, fetchSize: 10
+Using shards: 1, batchSize:1000, fetchSize: 10
+[OVERALL], RunTime(ms), 1761
+[OVERALL], Throughput(ops/sec), 567.8591709256104
+[TOTAL_GCS_PS_Scavenge], Count, 0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 0
+[TOTAL_GC_TIME], Time(ms), 0
+[TOTAL_GC_TIME_%], Time(%), 0.0
+[READ], Operations, 481
+[READ], AverageLatency(us), 883.3180873180874
+[READ], MinLatency(us), 163
+[READ], MaxLatency(us), 16431
+[READ], 95thPercentileLatency(us), 2217
+[READ], 99thPercentileLatency(us), 3163
+[READ], Return=OK, 481
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 683.5
+[CLEANUP], MinLatency(us), 305
+[CLEANUP], MaxLatency(us), 1062
+[CLEANUP], 95thPercentileLatency(us), 1062
+[CLEANUP], 99thPercentileLatency(us), 1062
+[UPDATE], Operations, 519
+[UPDATE], AverageLatency(us), 4616.865125240848
+[UPDATE], MinLatency(us), 2164
+[UPDATE], MaxLatency(us), 7491
+[UPDATE], 95thPercentileLatency(us), 6239
+[UPDATE], 99thPercentileLatency(us), 6771
+[UPDATE], Return=OK, 519
